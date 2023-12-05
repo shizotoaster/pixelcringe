@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "package": "net.shizotoaster.pixelcringe.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "minVersion": "0.8",
+  "mixins": [
+  ],
+  "client": [
+    "GeneralConfigMixin",
+    "MainMenuModifierMixin",
+    "DefaultServerListMixin",
+    "EscapeMenuCosmeticModifierMixin",
+    "PixelmonMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

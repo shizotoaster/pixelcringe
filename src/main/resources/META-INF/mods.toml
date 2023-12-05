@@ -1,0 +1,21 @@
+modLoader = "javafml"
+loaderVersion = "[36,)"
+license = "MIT"
+
+[[mods]]
+modId = "pixelcringe"
+version = "${version}"
+displayName = "PixelCringe - Pixelmon fixer"
+description = '''
+Fixes dumb things in Pixelmon
+'''
+authors = "shizotoaster"
+logoFile = "pixelcringe_icon.png"
+logoBlur = false
+
+[[dependencies.pixelcringe]]
+modId = "pixelmon"
+mandatory = true
+versionRange = "[9.1.9,)"
+ordering = "NONE"
+side = "BOTH"
