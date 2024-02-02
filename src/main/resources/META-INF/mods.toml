@@ -16,6 +16,6 @@ logoBlur = false
 [[dependencies.pixelcringe]]
 modId = "pixelmon"
 mandatory = true
-versionRange = "[9.1.9,)"
+versionRange = "[9.1.10,)"
 ordering = "NONE"
 side = "BOTH"

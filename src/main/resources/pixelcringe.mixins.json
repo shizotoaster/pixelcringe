@@ -6,11 +6,10 @@
   "mixins": [
   ],
   "client": [
+    "MenuOverrideFactoryMixin",
     "GeneralConfigMixin",
-    "MainMenuModifierMixin",
-    "DefaultServerListMixin",
-    "EscapeMenuCosmeticModifierMixin",
-    "PixelmonMixin"
+    "PixelmonMixin",
+    "DefaultServerListMixin"
   ],
   "injectors": {
     "defaultRequire": 1
