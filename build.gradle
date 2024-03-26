@@ -1,5 +1,5 @@
 plugins {
-    id "dev.architectury.loom" version "1.4-SNAPSHOT"
+    id "dev.architectury.loom" version "1.5-SNAPSHOT"
     id "maven-publish"
 }
 
@@ -45,7 +45,7 @@ dependencies {
 
     forge "net.minecraftforge:forge:${project.forge_version}"
 
-    modImplementation("maven.modrinth:pixelmon:9.2.3")
+    modImplementation("maven.modrinth:pixelmon:9.2.6")
 }
 
 processResources {
