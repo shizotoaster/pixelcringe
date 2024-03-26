@@ -9,7 +9,8 @@
   "client": [
     "MenuOverrideFactoryMixin",
     "ClientProxyMixin",
-    "GeneralConfigMixin"
+    "GeneralConfigMixin",
+    "DefaultServerListMixin"
   ],
   "injectors": {
     "defaultRequire": 1
