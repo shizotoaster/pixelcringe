@@ -11,7 +11,7 @@ version = project.mod_version
 group = project.maven_group
 
 java {
-    sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = targetCompatibility = JavaVersion.VERSION_17
 }
 
 loom {
@@ -45,7 +45,7 @@ dependencies {
 
     forge "net.minecraftforge:forge:${project.forge_version}"
 
-    modImplementation("maven.modrinth:pixelmon:9.1.10")
+    modImplementation("maven.modrinth:pixelmon:9.2.3")
 }
 
 processResources {
@@ -59,7 +59,7 @@ processResources {
 tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
 
-    def targetVersion = 8
+    def targetVersion = 17
     if (JavaVersion.current().isJava9Compatible()) {
         options.release = targetVersion
     }
