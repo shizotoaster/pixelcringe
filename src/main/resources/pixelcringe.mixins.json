@@ -7,8 +7,8 @@
   ],
   "client": [
     "MenuOverrideFactoryMixin",
+    "ClientProxyMixin",
     "GeneralConfigMixin",
-    "PixelmonMixin",
     "DefaultServerListMixin"
   ],
   "injectors": {

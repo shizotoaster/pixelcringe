@@ -45,7 +45,7 @@ dependencies {
 
     forge "net.minecraftforge:forge:${project.forge_version}"
 
-    modImplementation("maven.modrinth:pixelmon:9.1.10")
+    modImplementation("maven.modrinth:pixelmon:9.1.12")
 }
 
 processResources {
