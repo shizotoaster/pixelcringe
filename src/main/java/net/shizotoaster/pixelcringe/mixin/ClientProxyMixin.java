@@ -7,12 +7,17 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
+import java.io.IOException;
 import java.io.InputStream;
 
 @Mixin(ClientProxy.class)
 public class ClientProxyMixin {
     @Redirect(method = "init", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/util/Window;setIcon(Ljava/io/InputStream;Ljava/io/InputStream;)V"))
-    private static void pixelcringe$fuckPixelmonIcon(Window instance, InputStream intbuffer1, InputStream intbuffer2) {
-        if (PixelCringeConfig.PIXELMON_ICON_PATCH.get()) return;
+    private static void pixelcringe$fuckPixelmonIcon(Window instance, InputStream intbuffer1, InputStream intbuffer2) throws IOException {
+        if (!PixelCringeConfig.PIXELMON_ICON_PATCH.get()) {
+            instance.setIcon(intbuffer1, intbuffer2);
+        }
+        intbuffer1.close();
+        intbuffer2.close();
     }
 }
