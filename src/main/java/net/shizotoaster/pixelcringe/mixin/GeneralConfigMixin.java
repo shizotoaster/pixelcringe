@@ -9,8 +9,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(GeneralConfig.class)
 public class GeneralConfigMixin {
-    @Inject(method = "isUseDiscordRichPresence", at = @At("HEAD"), remap = false, cancellable = true)
-    public void fuckYouDiscordPresence(CallbackInfoReturnable<Boolean> cir) {
+    @Inject(method = "isUseDiscordRichPresence", at = @At("HEAD"), cancellable = true, remap = false)
+    private void pixelCringe$fuckDiscordRPC(CallbackInfoReturnable<Boolean> cir) {
         if (PixelCringeConfig.FORCE_DISABLE_RPC.get()) cir.setReturnValue(false);
     }
 }

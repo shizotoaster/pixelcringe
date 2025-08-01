@@ -1,15 +1,13 @@
 {
   "required": true,
   "package": "net.shizotoaster.pixelcringe.mixin",
-  "compatibilityLevel": "JAVA_8",
+  "compatibilityLevel": "JAVA_21",
   "minVersion": "0.8",
   "mixins": [
   ],
   "client": [
-    "MenuOverrideFactoryMixin",
-    "ClientProxyMixin",
-    "GeneralConfigMixin",
-    "DefaultServerListMixin"
+    "DefaultServerListMixin",
+    "MenuOverrideFactoryMixin"
   ],
   "injectors": {
     "defaultRequire": 1

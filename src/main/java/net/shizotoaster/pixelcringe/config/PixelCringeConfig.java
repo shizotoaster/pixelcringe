@@ -1,21 +1,19 @@
 package net.shizotoaster.pixelcringe.config;
 
-import net.minecraftforge.common.ForgeConfigSpec;
+import net.neoforged.neoforge.common.ModConfigSpec;
 
 public class PixelCringeConfig {
-    public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
-    public static final ForgeConfigSpec SPEC;
+    public static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
+    public static final ModConfigSpec SPEC;
 
-    public static final ForgeConfigSpec.BooleanValue ESCAPE_MENU_MODIFIER_PATCH;
-    public static final ForgeConfigSpec.BooleanValue WORLD_LOAD_MODIFIER_PATCH;
-    public static final ForgeConfigSpec.BooleanValue SERVER_CONNECT_MODIFIER_PATCH;
-    public static final ForgeConfigSpec.BooleanValue MAIN_MENU_MODIFIER_PATCH;
-    public static final ForgeConfigSpec.BooleanValue MULTIPLAYER_SCREEN_MODIFIER_PATCH;
+    public static final ModConfigSpec.BooleanValue ESCAPE_MENU_MODIFIER_PATCH;
+    public static final ModConfigSpec.BooleanValue WORLD_LOAD_MODIFIER_PATCH;
+    public static final ModConfigSpec.BooleanValue SERVER_CONNECT_MODIFIER_PATCH;
+    public static final ModConfigSpec.BooleanValue MAIN_MENU_MODIFIER_PATCH;
 
-    public static final ForgeConfigSpec.BooleanValue FORCE_DISABLE_RPC;
+    public static final ModConfigSpec.BooleanValue FORCE_DISABLE_RPC;
 
-    public static final ForgeConfigSpec.BooleanValue PIXELMON_ICON_PATCH;
-    public static final ForgeConfigSpec.BooleanValue SERVER_LIST_PATCH;
+    public static final ModConfigSpec.BooleanValue SERVER_LIST_PATCH;
 
     static {
         BUILDER.push("screens");
@@ -24,7 +22,6 @@ public class PixelCringeConfig {
         WORLD_LOAD_MODIFIER_PATCH = BUILDER.define("worldLoadModifierPatch", true);
         SERVER_CONNECT_MODIFIER_PATCH = BUILDER.define("serverConnectModifierPatch", true);
         MAIN_MENU_MODIFIER_PATCH = BUILDER.define("mainMenuModifierPatch", true);
-        MULTIPLAYER_SCREEN_MODIFIER_PATCH = BUILDER.define("multiplayerScreenModifierPatch", true);
 
         BUILDER.pop();
 
@@ -36,7 +33,6 @@ public class PixelCringeConfig {
 
         BUILDER.push("misc");
 
-        PIXELMON_ICON_PATCH = BUILDER.define("pixelmonIconPatch", true);
         SERVER_LIST_PATCH = BUILDER.define("serverListPatch", true);
 
         BUILDER.pop();
